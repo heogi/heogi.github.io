@@ -1,8 +1,13 @@
 ---
-title: X-MASCTF - Watermelon
-author: heogi
-categories: [CTF-Writeups]
-tags: [web CTF-Writeups]
+title: "X-MASCTF - Watermelon"
+header:
+  teaser: ""
+categories:
+  - CTF
+tags:
+  - X-MASCTF
+  - CTF
+toc: true
 ---
 
 

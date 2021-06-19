@@ -1,9 +1,16 @@
 ---
-title: Angstromctf2020 - The Magic Word
-author: heogi
-categories: [CTF-Writeups]
-tags: [web CTF-Writeups Angstromctf2020]
+title: "Angstromctf2020 - The Magic Word"
+header:
+  teaser: ""
+categories:
+  - CTF
+tags:
+  - Angstromctf2020
+  - CTF
+toc: true
 ---
+
+
 # The Magic Word
 
 ![2020-03-20-13-46-34](https://user-images.githubusercontent.com/45466073/122631526-363ee580-d107-11eb-81e6-5fc428dbb784.png)

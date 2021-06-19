@@ -10,11 +10,13 @@ tags: [web CTF-Writeups]
 
 Pandora 문제와 같은 웹 디자인과 동작이다.  
 
-![Alt text](https://raw.githubusercontent.com/heogi/heogi.github.io/master/_posts/CTF%20Writeups/Pragyan%20CTF/Kimi%20no%20Na%20Wa/image01.png) 
+![image01](https://user-images.githubusercontent.com/45466073/122631563-71d9af80-d107-11eb-8775-ff788527342d.png)
+
 
 회원가입을 하고 로그인을 하면 이번에는 NAME 파라미터가 없이 Success 파라미터만 존재한다.
 
-![Alt text](https://raw.githubusercontent.com/heogi/heogi.github.io/master/_posts/CTF%20Writeups/Pragyan%20CTF/Kimi%20no%20Na%20Wa/image02.png) 
+![image02](https://user-images.githubusercontent.com/45466073/122631566-7605cd00-d107-11eb-8db9-1906a1b9afc6.png)
+
 
 > ## Solve
 이번에는 NAME파라미터가 없기 때문에 다른 방법을 이용해야했다. 여러가지 시도해보고 인젝션 취약점을  
@@ -25,6 +27,6 @@ Pandora 문제와 같은 웹 디자인과 동작이다.
 ```
 이 공격으로 아래와 같은 결과를 얻을 수 있었다. 
 
-![Alt text](https://raw.githubusercontent.com/heogi/heogi.github.io/master/_posts/CTF%20Writeups/Pragyan%20CTF/Kimi%20no%20Na%20Wa/image03.png)  
+![image03](https://user-images.githubusercontent.com/45466073/122631567-7a31ea80-d107-11eb-84a7-923da0bb3bbe.png)
 이후는 앞의 Pandora 문제와 같이 Information_schema를 통해 table_name과 column_name을 알아내어 Flag를 획득하였다.
 

@@ -1,9 +1,16 @@
 ---
-title: Angstromctf2020 - Defund's Crypt
-author: heogi
-categories: [CTF-Writeups]
-tags: [web CTF-Writeups Angstromctf2020]
+title: "Angstromctf2020 - Defund's Crypt"
+header:
+  teaser: ""
+categories:
+  - CTF
+tags:
+  - Angstromctf2020
+  - CTF
+toc: true
 ---
+
+
 # Defund's Crypt
 ---
 

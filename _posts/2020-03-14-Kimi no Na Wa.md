@@ -1,8 +1,13 @@
 ---
-title: PragyanCTF - Kimi no Na Wa
-author: heogi
-categories: [CTF-Writeups]
-tags: [web CTF-Writeups]
+title: "PragyanCTF - Kimi no Na Wa"
+header:
+  teaser: ""
+categories:
+  - CTF
+tags:
+  - PragyanCTF
+  - CTF
+toc: true
 ---
 # Kimi no Na Wa  
 

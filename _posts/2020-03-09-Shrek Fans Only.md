@@ -1,8 +1,13 @@
 ---
-title: UTCTF2020 - Shrek Fans Only
-author: heogi
-categories: [CTF-Writeups]
-tags: [web CTF-Writeups]
+title: "UTCTF2020 - Shrek Fans Only"
+header:
+  teaser: ""
+categories:
+  - CTF
+tags:
+  - UTCTF2020
+  - CTF
+toc: true
 ---
 # Shrek-Fans-Only  
 

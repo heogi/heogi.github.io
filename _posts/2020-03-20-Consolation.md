@@ -1,8 +1,13 @@
 ---
-title: Angstromctf2020 - Consolation
-author: heogi
-categories: [CTF-Writeups]
-tags: [web CTF-Writeups Angstromctf2020]
+title: "Angstromctf2020 - Consolation"
+header:
+  teaser: ""
+categories:
+  - CTF
+tags:
+  - Angstromctf2020
+  - CTF
+toc: true
 ---
 
 # Consolation

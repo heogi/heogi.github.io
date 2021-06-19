@@ -6,9 +6,9 @@ tags: [web CTF-Writeups Angstromctf2020]
 ---
 # The Magic Word
 
-![error](https://raw.githubusercontent.com/heogi/heogi.github.io/master/_posts/CTF%20Writeups/angstromctf2020/The%20Magic%20Word/2020-03-20-13-46-34.png)
+![2020-03-20-13-46-34](https://user-images.githubusercontent.com/45466073/122631526-363ee580-d107-11eb-81e6-5fc428dbb784.png)
 
-![error](https://raw.githubusercontent.com/heogi/heogi.github.io/master/_posts/CTF%20Writeups/angstromctf2020/The%20Magic%20Word/2020-03-20-13-50-31.png)
+![2020-03-20-13-50-31](https://user-images.githubusercontent.com/45466073/122631528-3808a900-d107-11eb-8bbf-34e9ff6458db.png)
 
 페이지 소스코드에 동작하는 스크립트가 있다.
 

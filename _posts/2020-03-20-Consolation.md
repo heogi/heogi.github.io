@@ -7,14 +7,15 @@ tags: [web CTF-Writeups Angstromctf2020]
 
 # Consolation
 ---
-![](https://raw.githubusercontent.com/heogi/heogi.github.io/master/_posts/CTF%20Writeups/angstromctf2020/Consolation/2020-03-20-14-02-23.png)
+![2020-03-20-14-02-23](https://user-images.githubusercontent.com/45466073/122631449-e3fdc480-d106-11eb-8250-26fce1ca6212.png)
 
 문제에 접속하면 버튼이 보인다.
 
-![](https://raw.githubusercontent.com/heogi/heogi.github.io/master/_posts/CTF%20Writeups/angstromctf2020/Consolation/2020-03-20-14-02-57.png)
+![2020-03-20-14-02-57](https://user-images.githubusercontent.com/45466073/122631453-e8c27880-d106-11eb-9dda-95dc30a9a527.png)
 
 
-```javascript
+```javascript![Uploading 2020-03-20-14-02-23.png…]()
+
 <html>
 <head>
 	<title>consolation</title>
@@ -47,7 +48,8 @@ function nofret() {
 ```
 
 함수를 실행한뒤에 console 을 clear 시킨다. 해당 내용을 지우고 다시 nofret()함수를 실행시키면 
-![](https://raw.githubusercontent.com/heogi/heogi.github.io/master/_posts/CTF%20Writeups/angstromctf2020/Consolation/2020-03-20-14-09-40.png)
+
+![2020-03-20-14-09-40](https://user-images.githubusercontent.com/45466073/122631459-eeb85980-d106-11eb-8e10-a544cc1f5861.png)
 
 flag가 나타난다.
 ```text

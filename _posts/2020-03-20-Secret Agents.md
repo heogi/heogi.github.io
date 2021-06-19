@@ -1,9 +1,15 @@
 ---
-title: Angstromctf2020 - Secret Agents
-author: heogi
-categories: [CTF-Writeups]
-tags: [web CTF-Writeups Angstromctf2020]
+title: "Angstromctf2020 - Secret Agents"
+header:
+  teaser: ""
+categories:
+  - CTF
+tags:
+  - Angstromctf2020
+  - CTF
+toc: true
 ---
+
 # Secret Agents
 ---
 ![2020-03-20-15-13-56](https://user-images.githubusercontent.com/45466073/122631504-1c050780-d107-11eb-8b40-fd9a84b665f3.png)

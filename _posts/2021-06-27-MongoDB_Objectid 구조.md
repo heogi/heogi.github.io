@@ -10,7 +10,7 @@ tags:
 toc: true
 ---
 
-# MongoDB - ObjectID 생성원리
+# MongoDB - ObjectID 구조
 
 MongoDB의 ObjectID는 저장된 개체를 식별하기 위한 고유 값이다.
 

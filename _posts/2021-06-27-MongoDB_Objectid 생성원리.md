@@ -13,6 +13,7 @@ toc: true
 # MongoDB - ObjectID 생성원리
 
 MongoDB의 ObjectID는 저장된 개체를 식별하기 위한 고유 값이다.
+
 해당 값은 TimeStamp(4Byte), Random(5Byte), Incrementing Counter(3Byte)로 구성되어있다.
 
 아래는 ObjectID의 예시 값이다.

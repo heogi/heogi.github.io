@@ -8,8 +8,6 @@ tags:
   - CTF
   - Dreamhack
 toc: true
-
-published: false
 ---
 
 # Choco Shop

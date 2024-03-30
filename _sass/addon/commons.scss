@@ -522,7 +522,7 @@ main {
   &::before {
     content: '';
     position: absolute;
-    background: var(--shimmer-bg);
+    background: var(--img-bg);
     height: 100%;
     width: 100%;
     -webkit-animation: shimmer 1.3s infinite;

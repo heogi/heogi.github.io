@@ -520,9 +520,9 @@ main {
   background: var(--img-bg);
 
   &::before {
-    content: '';
+    //content: '';
     position: absolute;
-    background: var(--img-bg);
+    //background: var(--img-bg);
     height: 100%;
     width: 100%;
     -webkit-animation: shimmer 1.3s infinite;

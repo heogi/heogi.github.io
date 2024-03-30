@@ -1,9 +1,10 @@
 ---
-title: "Angstromctf2020 - Secret Agents"
+title: Angstromctf2020 - Secret Agents
 header:
   teaser: ""
 categories:
   - CTF
+  - Angstromctf2020
 tags:
   - Angstromctf2020
   - CTF

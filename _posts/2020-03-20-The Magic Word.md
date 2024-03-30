@@ -1,9 +1,10 @@
 ---
-title: "Angstromctf2020 - The Magic Word"
+title: Angstromctf2020 - The Magic Word
 header:
   teaser: ""
 categories:
   - CTF
+  - Angstromctf2020
 tags:
   - Angstromctf2020
   - CTF

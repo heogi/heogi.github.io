@@ -1,3 +1,14 @@
+---
+toc: true
+tags:
+  - web
+categories:
+  - CTF
+  - Dreamhack
+header:
+  teaser: ""
+title: Choco Shop
+---
 
 # Choco Shop
 

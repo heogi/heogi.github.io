@@ -1505,7 +1505,8 @@ search {
   }
 
   #main-wrapper > .container {
-    max-width: $main-content-max-width;
+    //max-width: $main-content-max-width;
+    max-width: 1550px;
     padding-left: 1.75rem !important;
     padding-right: 1.75rem !important;
   }

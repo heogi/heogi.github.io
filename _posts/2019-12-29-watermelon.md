@@ -1,9 +1,10 @@
 ---
-title: "X-MASCTF - Watermelon"
+title: X-MASCTF - Watermelon
 header:
   teaser: ""
 categories:
   - CTF
+  - X-MASCTF
 tags:
   - X-MASCTF
   - CTF

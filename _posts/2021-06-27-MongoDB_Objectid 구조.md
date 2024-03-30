@@ -1,12 +1,11 @@
 ---
-title: "MongoDB ObjectID"
+title: MongoDB ObjectID
 header:
   teaser: ""
 categories:
-  - Web
+  - Database
 tags:
   - MongoDB
-  - Web
 toc: true
 ---
 

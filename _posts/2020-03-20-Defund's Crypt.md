@@ -1,9 +1,10 @@
 ---
-title: "Angstromctf2020 - Defund's Crypt"
+title: Angstromctf2020 - Defund's Crypt
 header:
   teaser: ""
 categories:
   - CTF
+  - Angstromctf2020
 tags:
   - Angstromctf2020
   - CTF

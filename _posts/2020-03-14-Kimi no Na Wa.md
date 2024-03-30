@@ -1,9 +1,10 @@
 ---
-title: "PragyanCTF - Kimi no Na Wa"
+title: PragyanCTF - Kimi no Na Wa
 header:
   teaser: ""
 categories:
   - CTF
+  - PragyanCTF
 tags:
   - PragyanCTF
   - CTF

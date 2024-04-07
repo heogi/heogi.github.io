@@ -19,13 +19,14 @@ comments: true
 -   Tatics : 위협 행위의 목적
 -   Techniques : 위협 행위의 목적을 달성하기 위한 기술
 -   Procedures : 테크닉을 구현하기 위한 구체적인 절차와 방법  
+   
 ### **3\. MITRE ATT&CK Matrix**
 
 -   테크닉/서브테크닉을 전술을 기준으로 분류해 놓은 표
 -   Matrix 종류
-    -   Enterprise : 윈도우, MacOS, Linux, Cloud, Office 등에 관련된 전술 및 테크닉을 수록한 버전
-    -   Mobile : Android 및 IOS 관련된 전술 및 테크닉을 수록한 버전
-    -   ICS : 산업제어시스템과 관련된 전술 및 테크닉을 수록한 버전
+	- Enterprise : 윈도우, MacOS, Linux, Cloud, Office 등에 관련된 전술 및 테크닉을 수록한 버전
+    - Mobile : Android 및 IOS 관련된 전술 및 테크닉을 수록한 버전
+    - ICS : 산업제어시스템과 관련된 전술 및 테크닉을 수록한 버전
 
 [##_Image|kage@NIrlj/btsEXqZqCFT/nfptq5M3XZAXPow7nGkzaK/img.png|CDM|1.3|{"originWidth":2950,"originHeight":950,"style":"alignCenter"}_##]
 

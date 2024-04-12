@@ -3,8 +3,8 @@ title: Switching Commnad
 author: heogi
 date: 2024-01-07
 categories:
-  - Dreamhack
   - CTF
+  - Dreamhack
 tags:
   - Dreamhack
   - php

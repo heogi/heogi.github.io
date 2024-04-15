@@ -26,6 +26,7 @@ volatility.exe -f Adam Ferrante - Triage-Memory.mem --profile=Win7SP1x64 dlllist
 
 ![](../assets/img/Pasted%20image%2020240415224710.png)
 ## 악성 프로세스로 의심되는 파일
+
 먼저 `dlllist.txt` 파일에서 실행된 `command line`을 모두 살펴본다.
 
 ```powershell
@@ -160,6 +161,4 @@ Name                                                  Pid   PPid   Thds   Hnds T
 ... 0xfffffa8005a1d9e0:UWkpjFjDzM.exe                3496   5116      5    109 2019-03-22 05:35:33 UTC+0000
 .... 0xfffffa8005bb0060:cmd.exe                      4660   3496      1     33 2019-03-22 05:35:36 UTC+0000
 ```
-
-
 

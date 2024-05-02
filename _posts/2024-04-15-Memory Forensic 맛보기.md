@@ -162,3 +162,5 @@ Name                                                  Pid   PPid   Thds   Hnds T
 .... 0xfffffa8005bb0060:cmd.exe                      4660   3496      1     33 2019-03-22 05:35:36 UTC+0000
 ```
 
+## 네트워크 이상 징후
+

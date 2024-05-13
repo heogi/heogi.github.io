@@ -12,6 +12,7 @@ tags:
 comments: true
 ---
 ## Description
+
 Defcon DFIR CTF 2019에 출제된 Memory Dump를 통해 수상한 프로세스에 대하여 분석해본다.
 
 문제에서 제공되는 파일은 `Adam Ferrante - Triage-Memory.mem` 이고 `volatility` 를 통해 메모리 분석을 진행한다.

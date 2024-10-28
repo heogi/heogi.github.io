@@ -10,7 +10,6 @@ tags:
 comments: true
 ---
 ## 1. Description
-
 curl 명령어를 기반으로 백엔드 서비스의 API를 호출하는 웹 서비스입니다.  
 백엔드 서비스의 GET /admin 엔드포인트를 통해 플래그를 얻을 수 있습니다.
 서비스의 취약점을 찾고 익스플로잇하여 플래그를 획득하세요!
@@ -18,7 +17,7 @@ curl 명령어를 기반으로 백엔드 서비스의 API를 호출하는 웹 �
 
 ## 2. Analysis
 curl 기반으로 API 기능을 구현한 웹 페이지이다.
-웹앱을 통해 Backend 서버에 /admin 을 호출하여 Flag를 획득할 수 있다.
+웹앱을 통해 backend 서버에 /admin 을 호출하여 Flag를 획득할 수 있다.
 
 ![](../assets/img/Pasted%20image%2020241028082030.png)
 
@@ -28,7 +27,7 @@ curl 기반으로 API 기능을 구현한 웹 페이지이다.
 * `update`
 * `delete`
 
-각각 아래 subprocess로 생성된 curl 명령을 통해 Backend에 API를 호출한다.
+각각 아래 subprocess로 생성된 curl 명령을 통해 backend에 API를 호출한다.
 
 ```python
 def curl_backend_api(path, method, client_host, token=None, data=None):
@@ -89,7 +88,16 @@ async def get_admin(request: Request):
 ```
 
 ## 3. Attack
-`curl_backend_api` 함수의 `token` 변수는 사용자가 조작이 가능하며, 입력 값에 대한 제어가 없어 CRLF Injection 공격에 취약하다.
+`curl_backend_api` 함수의 `token` 변수는 사용자가 조작이 가능하며, 입력 값에 대한 제어가 없어 CRLF(`\r\n`) Injection 공격에 취약하다.
 이를 통해 `X-Forwarded-For` 헤더를 추가로 삽입하는것이 가능하며, 새로운 `HTTP Request Line` 을 추가하여 요청하는것도 가능하다.
 
+`GET /admin HTTP/1.1` 를 삽입하여 웹 앱에서 backend로 `/admin` 요청을 보내고
+`X-Forwarded-For` 헤더를 삽입하여 `if x_forwarded_for != '127.0.0.1':` 구문을 우회한다.
+`create`, `read` , `update` 요청은 backend의 response를 `json.load(res)` 를 통해 json 형태가 가공되기 때문에 json 형태가 아닌 값으로 요청 시 오류가 발생한다.
+하지만 `delete` 는 response를 `json.loads(res)` 를 거치지 않고 그대로 출력하여 `delete`를 통해 요청을 보낸다.
+또한 해당 요청도 마찬가지로 `token` 값이 필요하여 추가하면 아래와 같은 요청이 완성된다.
+
+```http
+POST /delete?simple_token=b32ebc7d96a42f3a065534fd1943619f2ed7158466230d844e9575b67bb4c98e%0d%0a%0d%0aGET%20/admin%20HTTP/1.1%0d%0aX-Forwarded-For:%20127.0.0.1%0d%0aSimple-Token:%20b32ebc7d96a42f3a065534fd1943619f2ed7158466230d844e9575b67bb4c98e
+```
 

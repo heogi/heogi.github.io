@@ -26,3 +26,4 @@ package-lock.json
 # Misc
 #assets/js/dist
 _site/
+.obsidian

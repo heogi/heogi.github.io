@@ -16,7 +16,6 @@ comments: true
 
 ## 1. Analysis
 memo를 작성할 수 있는 서비스를 제공하는 페이지이다.
-![](../assets/img/Pasted%20image%2020241118003515.png)
 문제에서 제공하는 코드를 살펴보면 `/report` 를 통해 `admin` 이 사용자가 입력한 특정 URL에 접근하도록 할 수 있는 기능이있다.
 또한 `/mypage` 에는 `token`  값이 존재하며 해당 값을 `API-KEY` header에 담아 보내면 `/api/memo` 를 통해 작성한 memo를 확인할 수 있다.
 

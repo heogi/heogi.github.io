@@ -19,8 +19,7 @@ toc: true
 ![](../assets/img/Pasted%20image%2020240330202953.png)
 
 
-```javascript![Uploading 2020-03-20-14-02-23.png…]()
-
+```html
 <html>
 <head>
 	<title>consolation</title>

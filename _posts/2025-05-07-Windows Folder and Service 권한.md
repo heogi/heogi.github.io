@@ -3,8 +3,10 @@ title: Windows Folder and Service 권한
 author: heogi
 date: 2025-05-07
 categories:
-  - windows
+  - Forensics
+  - Windows
 tags:
+  - forensics
   - windows
 comments: true
 ---

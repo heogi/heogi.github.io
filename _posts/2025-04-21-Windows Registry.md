@@ -3,8 +3,8 @@ title: Windows Registry for Forensics
 author: heogi
 date: 2025-04-21
 categories:
-  - forensics
-  - windows
+  - Forensics
+  - Windows
 tags:
   - forensics
   - windows

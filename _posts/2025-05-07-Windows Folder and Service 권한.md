@@ -25,7 +25,8 @@ icacls.exe "C:\temp" /setowner Administrators /q /c /t
 해당 명령어를 통해 보게되면 SDDL이 출력된다. SDDL(Security Descriptor Definition Language)는 보안 설명자 정의 언어로 아래와 같은 형태로 구성되어있다.
 `D:(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCLCSWLOCRRC;;;AU)(A;;CCLCSWRPWPDTLOCRRC;;;PU)`
 
-D:는 DACL(Discretionary Access Control List)을 의미한다. 괄호 () 안의 각 항목은 ACE(Access Control Entry)를 나타낸다. 각각의 ACE는 특정 사용자 또는 그룹에 대한 권한을 정의한다.
+D:는 DACL(Discretionary Access Control List)을 의미한다. 괄호 () 안의 각 항목은 ACE(Access Control Entry)를 나타낸다. 
+각각의 ACE는 특정 사용자 또는 그룹에 대한 권한을 정의한다.
 * BA = Built-in Administartors
 * SY = Local System
 * AU = Authenticated Users

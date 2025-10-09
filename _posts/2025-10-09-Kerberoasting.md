@@ -17,4 +17,4 @@ Kerberoasting은 Kerberos 프로토콜의 정상적인 동작(서비스 티켓 �
 
 ## Kerberos란 
 Kerberos란 안전하지 않은 네트워크에서 사용자나 컴퓨터가 서로의 신원을 안전하게 인증하기 위해 사용하는 티켓 기반의 네트워크 인증 프로토콜이다.
-![|1288x1176](../heogi.github.io/assets/img/2025-10-09-Kerberoasting-1760009968173.png)
+![|1288x1176](../assets/img/2025-10-09-Kerberoasting-1760010354948.png)

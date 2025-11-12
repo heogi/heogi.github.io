@@ -5,13 +5,8 @@ Gemfile.lock
 
 # Jekyll cache
 .jekyll-cache
-_site
-.devcontainer
 .jekyll-metadata
-.DS-Store
-.sass-cache
-Thumbs.db
-*.log
+_site
 
 # RubyGems
 *.gem
@@ -22,8 +17,11 @@ package-lock.json
 
 # IDE configurations
 .idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
 
 # Misc
-#assets/js/dist
-_site/
-.obsidian
+_sass/vendors
+assets/js/dist

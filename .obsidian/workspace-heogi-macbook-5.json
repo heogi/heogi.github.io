@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "eca14509e316035d",
+    "type": "split",
+    "children": [
+      {
+        "id": "76d78ace6e369518",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "12435ab7440d2a1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Personnal/Incident Response/윈도우 단말 이상징후 식별.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d6b6b9b9776090f6",
+    "type": "split",
+    "children": [
+      {
+        "id": "bf3c52a5f102bb6b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "906822e22b2e8274",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b0fa465deb7fd9b9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:Definit",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ef4913038dc6c862",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "19d8372b96101a15",
+    "type": "split",
+    "children": [
+      {
+        "id": "0a1482c4e7778be0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "469ef0ff2c0b34f3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Personnal/Incident Response/윈도우 단말 이상징후 식별.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e2ec1b556e330b97",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Personnal/Incident Response/윈도우 단말 이상징후 식별.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5c0d052328705893",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a0ace9eb4691fcbf",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Personnal/Incident Response/윈도우 단말 이상징후 식별.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "12435ab7440d2a1c",
+  "lastOpenFiles": [
+    "heogi.github.io/_posts/2024-04-22-AWS Systems Manager.md",
+    "heogi.github.io/assets/img/Pasted image 20240422145215.png",
+    "heogi.github.io/assets/img/Pasted image 20240422145209.png",
+    "heogi.github.io/assets/img/Pasted image 20240422145238.png",
+    "heogi.github.io/assets/img/Pasted image 20240422145232.png",
+    "heogi.github.io/_posts/2024-04-22-AWS EC2 Instance LifeCycle.md",
+    "heogi.github.io/assets/img/Pasted image 20240422144743.png",
+    "Personnal/Kisa/침해사고 조사 훈련/CTF 설명.md",
+    "Personnal/Incident Response/윈도우 단말 이상징후 식별.md",
+    "Personnal/Incident Response",
+    "Personnal/Kisa/침해사고 조사 훈련/자가 실습.md",
+    "Personnal/Kisa/침해사고 조사 훈련/사전 자료.md",
+    "Pasted image 20240406231254.png",
+    "Pasted image 20240406230338.png",
+    "무제 파일.md",
+    "heogi.github.io/assets/img/Pasted image 20240417165040.png",
+    "Personnal/Bug Bounty/Tools.md",
+    "heogi.github.io/_site/tags/forensic/index.html",
+    "heogi.github.io/_site/tags/forensic",
+    "heogi.github.io/_site/tags/mitre-framework/index.html",
+    "heogi.github.io/_site/tags/mitre-framework",
+    "heogi.github.io/_site/tags/orw/index.html",
+    "heogi.github.io/_site/tags/orw",
+    "heogi.github.io/_site/tags/incident-response/index.html",
+    "heogi.github.io/_site/tags/incident-response",
+    "heogi.github.io/_site/tags/dreamhack/index.html",
+    "heogi.github.io/_posts/2024-04-15-Memory Forensic 맛보기.md",
+    "heogi.github.io/_site/assets/img/Pasted image 20240415224710.png",
+    "heogi.github.io/_site/assets/img/Pasted image 20240407002433.png",
+    "heogi.github.io/_posts/2024-04-13-Web Server vs WAS(Web Application Server).md",
+    "heogi.github.io/_posts/2024-04-13-Shell_Basic.md",
+    "heogi.github.io/_posts/2024-04-13-Frida Option 정리.md",
+    "heogi.github.io/_posts/2024-04-13-Switching Commnad.md",
+    "heogi.github.io/_posts/2024-04-08-Threat Modelling.md",
+    "heogi.github.io/_posts/2024-04-08-MITRE ATT&CK.md",
+    "heogi.github.io/_posts/2024-04-08-STRIDE Framework.md",
+    "heogi.github.io/_posts/2024-04-07-AMSI(Anti Malware Scan Interface).md",
+    "heogi.github.io/_posts/2024-04-07.md",
+    "Personnal/Information/DFIR.md",
+    "Personnal/Bug Bounty/Coca-Cola.md",
+    "Personnal/Bug Bounty/MLB.md",
+    "heogi.github.io/_posts/2024-03-31-Secure Mail.md",
+    "heogi.github.io/_posts/2021-06-27-MongoDB_Objectid 구조.md",
+    "heogi.github.io/_posts/2021-07-13-Choco Shop.md",
+    "heogi.github.io/_posts/2024-03-30-read_flag.md",
+    "heogi.github.io/_posts/2020-06-08-babyJS.md"
+  ]
+}

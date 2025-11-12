@@ -1,0 +1,10 @@
+{
+  "showLineNumber": false,
+  "propertiesInDocument": "visible",
+  "readableLineLength": false,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "assets/img",
+  "promptDelete": false
+}

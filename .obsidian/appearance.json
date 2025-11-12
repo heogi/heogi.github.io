@@ -1,0 +1,8 @@
+{
+  "accentColor": "#a701f4",
+  "theme": "obsidian",
+  "cssTheme": "Minimal",
+  "enabledCssSnippets": [
+    "color-extend"
+  ]
+}

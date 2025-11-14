@@ -15,6 +15,8 @@ EDR 또는 Event VIewer를 분석하다보면 여러 Windows Logon Type이 보�
 
 ### Logon Type 3
 
+### Logon Type 5
+
 
 
 > 참고

@@ -10,7 +10,7 @@ tags:
 comments: true
 ---
 ## Windows Logon Type
-EDR 또는 Event VIewer를 분석하다보면 여러 Windows Logon Type이 보인다.   
+<kbd>EDR</kbd>  또는 <kbd>Event viewer</kbd> 를 분석하다보면 여러 Windows Logon Type이 보인다.   
 주로 발생하는 Logon Type에 대해 정리하고 어떤 상황에서 해당 Logon Type이 발생하는지 정리해본다.
 
 | Logon Type | Logon Title       | Description                                                                                                                                               | Example                                                 |
@@ -49,4 +49,3 @@ winlogon.exe
 >  **참고**
 - [https://learn.microsoft.com/ko-kr/windows-server/security/windows-authentication/windows-logon-scenarios](https://learn.microsoft.com/ko-kr/windows-server/security/windows-authentication/windows-logon-scenarios)
 {: .prompt-info }
-

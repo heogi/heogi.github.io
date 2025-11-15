@@ -45,7 +45,6 @@ winlogon.exe
          └─ 사용자가 실행한 프로세스
 ```
 
-
 >  **참고**
-- [https://learn.microsoft.com/ko-kr/windows-server/security/windows-authentication/windows-logon-scenarios](https://learn.microsoft.com/ko-kr/windows-server/security/windows-authentication/windows-logon-scenarios)
+[https://learn.microsoft.com/ko-kr/windows-server/security/windows-authentication/windows-logon-scenarios](https://learn.microsoft.com/ko-kr/windows-server/security/windows-authentication/windows-logon-scenarios)
 {: .prompt-info }

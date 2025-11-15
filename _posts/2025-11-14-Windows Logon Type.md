@@ -46,7 +46,7 @@ winlogon.exe
 ```
 
 
-> 참고
-https://learn.microsoft.com/ko-kr/windows-server/security/windows-authentication/windows-logon-scenarios
+> ** 참고  **
+- https://learn.microsoft.com/ko-kr/windows-server/security/windows-authentication/windows-logon-scenarios
 {: .prompt-info }
 

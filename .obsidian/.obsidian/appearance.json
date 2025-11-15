@@ -1,0 +1,8 @@
+{
+  "cssTheme": "Minimal",
+  "accentColor": "#9c00f0",
+  "enabledCssSnippets": [
+    "color-extend"
+  ],
+  "translucency": false
+}

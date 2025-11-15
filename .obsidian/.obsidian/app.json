@@ -1,0 +1,9 @@
+{
+  "alwaysUpdateLinks": true,
+  "promptDelete": false,
+  "newLinkFormat": "relative",
+  "attachmentFolderPath": "assets/img",
+  "showLineNumber": true,
+  "spellcheck": false,
+  "readableLineLength": false
+}

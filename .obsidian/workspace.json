@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-10-09-Kerberos.md",
+                "file": "_posts/2025-11-14-Windows Logon Type.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-09-Kerberos"
+              "title": "2025-11-14-Windows Logon Type"
             }
           }
         ]
@@ -168,6 +168,9 @@
   },
   "active": "006e11ca2aec7599",
   "lastOpenFiles": [
+    "_posts/2025-11-14-Windows Logon Type.md",
+    "_posts/2025-11-14-Windows Logon Type.md",
+    "_posts/2025-10-09-Kerberos.md",
     "assets/js/dist/sw.min.js",
     "assets/js/dist/app.min.js",
     "assets/js/dist/theme.min.js",
@@ -178,7 +181,6 @@
     "assets/js/dist/home.min.js",
     "_sass/vendors/_bootstrap.scss",
     "_sass/vendors",
-    "package-lock.json",
     "node_modules/@semantic-release/github/node_modules/@semantic-release/error/README.md",
     "node_modules/semantic-release/node_modules/@semantic-release/error/README.md",
     "node_modules/@semantic-release/exec/node_modules/@semantic-release/error/README.md",
@@ -202,8 +204,6 @@
     "node_modules/semantic-release/node_modules/wrap-ansi/readme.md",
     "node_modules/semantic-release/node_modules/string-width/readme.md",
     "node_modules/eslint/node_modules/ajv/README.md",
-    "node_modules/eslint/node_modules/json-schema-traverse/README.md",
-    "node_modules/semantic-release/node_modules/ansi-styles/readme.md",
     "node_modules/concurrently/docs/demo.gif",
     "node_modules/highlight.js/scss/school-book.png",
     "node_modules/highlight.js/scss/pojoaque.jpg",

@@ -10,7 +10,7 @@ tags:
 comments: true
 ---
 ## Windows Logon Type
-EDR 또는 Event VIewer를 분석하다보면 여러 Windows Logon Type이 보인다.
+EDR 또는 Event VIewer를 분석하다보면 여러 Windows Logon Type이 보인다.   
 주로 발생하는 Logon Type에 대해 정리하고 어떤 상황에서 해당 Logon Type이 발생하는지 정리해본다.
 
 | Logon Type | Logon Title       | Description                                                                                                                                               | Example                                                 |
@@ -23,7 +23,7 @@ EDR 또는 Event VIewer를 분석하다보면 여러 Windows Logon Type이 보�
 
 ## Logon Type 별 정상 프로세스 트리 패턴
 
-```shell
+```text
 # Logon Type 2 (Interactive)
 winlogon.exe  
  └─ userinit.exe  
@@ -43,7 +43,6 @@ winlogon.exe
  └─ userinit.exe  
      └─ explorer.exe  
          └─ 사용자가 실행한 프로세스
-
 ```
 
 

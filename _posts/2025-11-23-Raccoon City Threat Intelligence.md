@@ -68,5 +68,6 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 19.17 seconds
 ```
 이 중 임직원 정보를 수집하기 위해 오픈되어있는 80 포트 외 8081 SimpleHTTP 서비스에 접속해보면 아래 처럼 `raccooncoin_info.zip` 파일이 확인된다.
+
 ![|225x94](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1763912008575.png)
 

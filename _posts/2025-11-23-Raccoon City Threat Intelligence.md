@@ -70,7 +70,7 @@ Nmap done: 1 IP address (1 host up) scanned in 19.17 seconds
 
 이 중 임직원 정보를 수집하기 위해 오픈되어있는 80 포트 외 8081 SimpleHTTP 서비스에 접속해보면 `raccooncoin_info.zip` 파일이 확인된다.
 
-![|225x94](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1763912008575.png)
+![|218x97](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1763996967110.png)
 
 압축을 해제하면 아래의 파일들이 확인된다.
 * `db.sql` - Raccooncoin 대표 및 임직원의 ID, Email, Password Hash가 기록된 SQL 파일
@@ -78,6 +78,7 @@ Nmap done: 1 IP address (1 host up) scanned in 19.17 seconds
 * `Source Code.zip` - Spark Repo의 소스코드
 
 `plan.txt` 파일에는 Raccooncoin 공격을 위한 계획이 수립 되어있는것을 확인할 수 있다.
+
 ```txt
 [0x01] Initial Recon
 --------------------

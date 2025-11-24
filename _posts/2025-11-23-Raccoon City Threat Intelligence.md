@@ -26,10 +26,10 @@ CEO는 발송 사실을 부인했습니다. TI 팀은 원본 이메일 `client_r
 Phising Site 의 코드를 확인해보면 아래와 같은 수상한 Javascript가 확인된다.
 해당 사이트에 사용자가 입력한 사내 이메일, 패스워드 등 을 `140.238.194.224` 서버로 전송하고 3초 뒤 원본 사이트인 `www.raccooncoin.site`로 이동시킨다.
 해당 Phising Site를 통해 공격자는 Raccooncoin 임직원의 사내 계정 및 패스워드를 확보할 수 있었다.
+
 ```javascript
 <script>
 	document.getElementById('year').textContent = new Date().getFullYear();
-
     const form = document.getElementById('vpn-form');
     const submitBtn = document.getElementById('submitBtn');
     const demoBtn = document.getElementById('demoBtn');
@@ -67,7 +67,48 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 19.17 seconds
 ```
-이 중 임직원 정보를 수집하기 위해 오픈되어있는 80 포트 외 8081 SimpleHTTP 서비스에 접속해보면 아래 처럼 `raccooncoin_info.zip` 파일이 확인된다.
+
+이 중 임직원 정보를 수집하기 위해 오픈되어있는 80 포트 외 8081 SimpleHTTP 서비스에 접속해보면 `raccooncoin_info.zip` 파일이 확인된다.
 
 ![|225x94](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1763912008575.png)
+
+압축을 해제하면 아래의 파일들이 확인된다.
+* `db.sql` - Raccooncoin 대표 및 임직원의 ID, Email, Password Hash가 기록된 SQL 파일
+* `plan.txt` - 공격 계획에 대한 상세한 설명이 기재된 파일
+* `Source Code.zip` - Spark Repo의 소스코드
+
+`plan.txt` 파일에는 Raccooncoin 공격을 위한 계획이 수립 되어있는것을 확인할 수 있다.
+```txt
+[0x01] Initial Recon
+--------------------
+- Target: raccooncoin.site (KR-based crypto exchange)
+- Goal: Obtain internal access to Staff VPN / admin panel
+- Approach: OSINT → impersonation → phishing → VPN creds → pivot
+중략...
+
+[0x02] Social Engineering Plan
+Idea: Create fake LinkedIn + GitHub profiles to impersonate internal staff or trusted vendors (for dropper purpose)
+
+1) Fake LinkedIn profile #1 - their tech lead
+중략...
+
+2) Fake GitHub profile - TBU more
+중략...
+
+[0x03] Phishing Scenario
+------------------------
+Objective: Get staff to log into attacker-controlled VPN portal, extract DB.
+중략...
+
+[0x05] Future Steps / To-Do
+---------------------------
+[ ] Finish fake LinkedIn + GitHub profiles and age them for a few days.
+[ ] Join Korean security / crypto groups and casually interact to build trust.
+[ ] Finalize phishing email template in both English and Korean.
+[ ] Deploy cloned VPN login page and test credential logging.
+[ ] Deploy cloned VPN login page and test credential logging.
+[ ] Prepare OSINT trail so that investigators (CTF players) can:
+    - find this notes file
+    - pivot from leaked SQL → email addresses → social media → fake profiles → onion/redirector infra.
+```
 

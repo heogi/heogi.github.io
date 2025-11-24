@@ -28,7 +28,6 @@ Phising Site 의 코드를 확인해보면 아래와 같은 수상한 Javascript
 해당 Phising Site를 통해 공격자는 Raccooncoin 임직원의 사내 계정 및 패스워드를 확보할 수 있었다.
 
 ```javascript
-<script>
 	document.getElementById('year').textContent = new Date().getFullYear();
     const form = document.getElementById('vpn-form');
     const submitBtn = document.getElementById('submitBtn');
@@ -47,11 +46,11 @@ Phising Site 의 코드를 확인해보면 아래와 같은 수상한 Javascript
           window.location.href = 'https://www.raccooncoin.site';
 	    }, 3000);
 	});
-</script>
 ```
 
 ### Credential Harvest 서버 분석
 임직원의 계정 정보를 수집하는 서버의 정보 수집을 위해 스캐닝을 진행하면 SSH, HTTP를 서비스 중인것으로 확인된다.
+
 ```shell
 heogi@heogi-macbook:~$ sudo nmap -sV 140.238.194.224
 Starting Nmap 7.95 ( https://nmap.org ) at 2025-11-23 23:57 KST
@@ -70,7 +69,7 @@ Nmap done: 1 IP address (1 host up) scanned in 19.17 seconds
 
 이 중 임직원 정보를 수집하기 위해 오픈되어있는 80 포트 외 8081 SimpleHTTP 서비스에 접속해보면 `raccooncoin_info.zip` 파일이 확인된다.
 
-![|218x97](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1763996967110.png)
+![218x97](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1763996967110.png)
 
 압축을 해제하면 아래의 파일들이 확인된다.
 * `db.sql` - Raccooncoin 대표 및 임직원의 ID, Email, Password Hash가 기록된 SQL 파일
@@ -79,7 +78,7 @@ Nmap done: 1 IP address (1 host up) scanned in 19.17 seconds
 
 `plan.txt` 파일에는 Raccooncoin 공격을 위한 계획이 수립 되어있는것을 확인할 수 있다.
 
-```txt
+```text
 [0x01] Initial Recon
 --------------------
 - Target: raccooncoin.site (KR-based crypto exchange)

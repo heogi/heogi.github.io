@@ -48,7 +48,7 @@ Phising Site 의 코드를 확인해보면 아래와 같은 수상한 Javascript
 	});
 ```
 
-### Credential Harvest 서버 분석
+### Credential Harvest 서버 분석
 임직원의 계정 정보를 수집하는 서버의 정보 수집을 위해 스캐닝을 진행하면 SSH, HTTP를 서비스 중인것으로 확인된다.
 
 ```shell
@@ -129,8 +129,7 @@ Objective: Get staff to log into attacker-controlled VPN portal, extract DB.
 ### Fake Linkedin Profile
 `plan.txt` 파일에 기반하여 공격자들이 사용했을 것으로 추정되는 Soyeong Park 계정의 Fake Linkedin Profile을 추적한다.
 `www.raccooncoin.site` 페이지에 접속하면 Raccooncoin 임직원의 간단한 소개가 기재 되어 있는것을 확인할 수 있다.
-
-![|717x185](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1764170222790.png)
+![717x185](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1764170222790.png)
 
 Linkedin에서 `Soyeong Park raccoon coin` 으로 검색하면 Soyeong Park 계정의 프로필이 확인된다.
 ![|395x57](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1764170930833.png)

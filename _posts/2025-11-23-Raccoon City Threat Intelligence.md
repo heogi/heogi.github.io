@@ -90,9 +90,23 @@ Nmap done: 1 IP address (1 host up) scanned in 19.17 seconds
 Idea: Create fake LinkedIn + GitHub profiles to impersonate internal staff or trusted vendors (for dropper purpose)
 
 1) Fake LinkedIn profile #1 - their tech lead
+   - Name: "Soyeong Park"
+   - Title: "Teach Lead at Raccoon Coin"
+   - Pitch: for internal vpn training or just try out fake logon attempt to internal employeee
+   - Connect with:
+     - Tony Raccoon
+     - anyone listing "RaccoonCoin" or "RaccoonCoin Exchange" as employer.
 중략...
 
-2) Fake GitHub profile - TBU more
+1) Fake GitHub profile - TBU more
+   - Use the tech lead identity (with email verification with racooncoin.site )
+   - Bio: "Tech lead raccooncoin."
+   - Mirror some public code (fork from open-source projects).
+   - Upload fake "internal" tools repo later:
+     - /scripts/vpn-helper.sh
+     - /tools/raccoon-monitor.py
+   - Idea: if devs Google random errors, they might land on this GitHub and trust it as internal.
+   - Could embed malicious curl|bash installer in README later.
 중략...
 
 [0x03] Phishing Scenario
@@ -112,3 +126,13 @@ Objective: Get staff to log into attacker-controlled VPN portal, extract DB.
     - pivot from leaked SQL → email addresses → social media → fake profiles → onion/redirector infra.
 ```
 
+### Fake Linkedin Profile
+`plan.txt` 파일에 기반하여 공격자들이 사용했을 것으로 추정되는 Soyeong Park 계정의 Fake Linkedin Profile을 추적한다.
+`www.raccooncoin.site` 페이지에 접속하면 Raccooncoin 임직원의 간단한 소개가 기재 되어 있는것을 확인할 수 있다.
+
+![|717x185](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1764170222790.png)
+
+Linkedin에서 `Soyeong Park raccoon coin` 으로 검색하면 Soyeong Park 계정의 프로필이 확인된다.
+![|395x57](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1764170930833.png)
+
+### Fake Github Profile

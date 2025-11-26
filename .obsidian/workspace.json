@@ -169,6 +169,9 @@
   },
   "active": "006e11ca2aec7599",
   "lastOpenFiles": [
+    "assets/img/2025-11-23-Raccoon City Threat Intelligence-1764170930833.png",
+    "assets/img/2025-11-23-Raccoon City Threat Intelligence-1764170700517.png",
+    "assets/img/2025-11-23-Raccoon City Threat Intelligence-1764170222790.png",
     "assets/img/2025-11-23-Raccoon City Threat Intelligence-1763996967110.png",
     "assets/img/2025-11-23-Raccoon City Threat Intelligence-1763912008575.png",
     "assets/img/2025-11-23-Raccoon City Threat Intelligence-1763905591944.png",
@@ -211,9 +214,6 @@
     "node_modules/concurrently/docs/demo.gif",
     "node_modules/highlight.js/scss/school-book.png",
     "node_modules/highlight.js/scss/pojoaque.jpg",
-    "node_modules/highlight.js/scss/brown-papersq.png",
-    "node_modules/highlight.js/styles/school-book.png",
-    "node_modules/highlight.js/styles/pojoaque.jpg",
-    "node_modules/highlight.js/styles/brown-papersq.png"
+    "node_modules/highlight.js/scss/brown-papersq.png"
   ]
 }

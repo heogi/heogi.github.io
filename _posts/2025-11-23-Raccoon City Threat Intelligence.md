@@ -135,3 +135,38 @@ Linkedin에서 `Soyeong Park raccoon coin` 으로 검색하면 Soyeong Park 계�
 ![|395x57](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1764170930833.png)
 
 ### Fake Github Profile
+github에 raccooncoin으로 서칭 시 raccooncoin-dev 레포가 확인된다.
+![|675x387](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1764385885855.png)
+
+해당 레포를 clone 하여 `git show`명령어를 통해 commit 시간을 확인 할 수 있다.
+commit 중 하나를 확인해보면 `Date:   Wed Nov 12 21:45:25 2025 -0500`로 확인되고
+![|598x221](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1764386900899.png)
+이를 통해 공격자는 UTC - 5 인 국가에서 commit을 한것으로 추정할 수 있다.
+
+### Credential Harvest 서버 Initial Access
+commit 중 `d64dd40661b4f35cc74be42cbfa72703622e7aa4` 를 확인해보면 특정 서버의 ssh key가 노출된것이 확인된다.
+![|580x254](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1764387173190.png)
+
+확인된 ssh key를 기반으로 Credential Harvest 서버에 접속하여 추가 조사를 진행한다.
+`id_ed25519` Private Key를 이용해서 ssh 로그인을 진행해주며, passphrase는 또 다른 commit인 `4c8b9215b593d20b4d78558592e29777ef4e9162`의 bash_history 파일에 존재한다.
+```shell
+ssh -i id_ed25519 spark@140.238.194.224
+```
+![598x365](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1764433494816.png)
+`.bashrc` 파일을 확인해보면 아래와 같은 onion URL이 확인되며, C2 서버에 대한 IP를 환경 변수로 정의해놓았다.
+```shell
+#.bashrc
+중략...
+export ONION=http://w7kea3mqv3pq4rhnpavv3ezgyhtkj2v443oidlqtuj7aa72wu5yh2nqd.onion/
+#export ONIONKEY=6BPIMPLNL5ISY5O3LGVVRUE7BEZMLFZ5WITY2XPZ26P45YGMJZIQ << maybe not needed
+export C2=158.180.x.x
+unset HISTFILE
+export HISTSIZE=0
+export HISTFILESIZE=0
+```
+
+`netstat` 을 통해 IP를 찾아보면 SSH를 통해 현재 연결되어있는것을 알 수 있다.
+ ```shell
+ spark@redirector:~$ netstat -ano | grep 158.180.
+ tcp        0      0 10.0.0.65:22            158.180.6.169:40302     ESTABLISHED keepalive (1339.67/0/0)
+ ```

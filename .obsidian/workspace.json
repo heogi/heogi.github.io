@@ -169,13 +169,17 @@
   },
   "active": "006e11ca2aec7599",
   "lastOpenFiles": [
+    "assets/img/2025-11-23-Raccoon City Threat Intelligence-1764433494816.png",
+    "assets/img/2025-11-23-Raccoon City Threat Intelligence-1764387173190.png",
+    "assets/img/2025-11-23-Raccoon City Threat Intelligence-1764386900899.png",
+    "assets/img/2025-11-23-Raccoon City Threat Intelligence-1764385885855.png",
+    "assets/img/2025-11-23-Raccoon City Threat Intelligence-1764385852780.png",
     "assets/img/2025-11-23-Raccoon City Threat Intelligence-1764170930833.png",
     "assets/img/2025-11-23-Raccoon City Threat Intelligence-1764170700517.png",
     "assets/img/2025-11-23-Raccoon City Threat Intelligence-1764170222790.png",
     "assets/img/2025-11-23-Raccoon City Threat Intelligence-1763996967110.png",
     "assets/img/2025-11-23-Raccoon City Threat Intelligence-1763912008575.png",
     "assets/img/2025-11-23-Raccoon City Threat Intelligence-1763905591944.png",
-    "assets/img/2025-11-23-Raccoon City Threat Intelligence-1763905504005.png",
     "_posts/2025-11-14-Windows Logon Type.md",
     "_posts/2025-11-23-Raccoon City Threat Intelligence.md",
     "_posts/2025-10-09-Kerberos.md",
@@ -210,10 +214,6 @@
     "node_modules/semantic-release/node_modules/cliui/CHANGELOG.md",
     "node_modules/@cacheable/memory/node_modules/@keyv/bigmap/README.md",
     "node_modules/semantic-release/node_modules/wrap-ansi/readme.md",
-    "node_modules/semantic-release/node_modules/string-width/readme.md",
-    "node_modules/concurrently/docs/demo.gif",
-    "node_modules/highlight.js/scss/school-book.png",
-    "node_modules/highlight.js/scss/pojoaque.jpg",
-    "node_modules/highlight.js/scss/brown-papersq.png"
+    "node_modules/semantic-release/node_modules/string-width/readme.md"
   ]
 }

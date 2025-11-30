@@ -166,7 +166,30 @@ export HISTFILESIZE=0
 ```
 
 `netstat` 을 통해 IP를 찾아보면 SSH를 통해 현재 연결되어있는것을 알 수 있다.
- ```shell
- spark@redirector:~$ netstat -ano | grep 158.180.
- tcp        0      0 10.0.0.65:22            158.180.6.169:40302     ESTABLISHED keepalive (1339.67/0/0)
- ```
+```shell
+spark@redirector:~$ netstat -ano | grep 158.180.
+tcp        0      0 10.0.0.65:22            158.180.6.169:40302     ESTABLISHED keepalive (1339.67/0/0)
+```
+
+### Onion URL 조사
+`.bashrc` 파일에서 확인된 onion URL에 접속하여 추가 조사를 진행한다.
+Tor 브라우저에서 onion URL에 접속하면 아래와 같은 RAASNet(랜섬웨어 생성 서비스) 페이지가 확인된다.
+`Navigation` 탭에서 `Dashboard` 로 접속하면 아래와 같은 화면이 확인된다.
+![|1057x282](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1764492324203.png)
+
+`Quick Artifacts` 중 `ransom_loader_v2.exe` 파일을 다운로드 후 해당 파일을 조사해보면, 파일은 `ASCII text` 파일이고 아래와 같은 스트링이 출력된다.
+
+```shell
+┌──(root㉿kali)-[~kali/Downloads]
+└─# file ransom_loader_v2.exe     
+ransom_loader_v2.exe: ASCII text
+
+┌──(root㉿kali)-[~kali/Downloads]
+└─# cat ransom_loader_v2.exe    
+Placeholder: Windows loader binary (text-safe). Just a text file for educational purpose, just chill dude.
+
+┌──(root㉿kali)-[~kali/Downloads]
+└─# sha256sum ransom_loader_v2.exe    
+e4c1572b153b10ed540f415dc436a87c7b46f0965daaa3ac98df3072925013e8  ransom_loader_v2.exe
+```
+

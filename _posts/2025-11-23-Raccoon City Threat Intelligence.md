@@ -49,7 +49,6 @@ form.addEventListener('submit', (e) => {
 
 ## Credential Harvest 서버 분석
 임직원의 계정 정보를 수집하는 서버의 정보 수집을 위해 스캐닝을 진행하면 SSH, HTTP를 서비스 중인것으로 확인된다.
-
 ```shell
 heogi@heogi-macbook:~$ sudo nmap -sV 140.238.194.224
 Starting Nmap 7.95 ( https://nmap.org ) at 2025-11-23 23:57 KST
@@ -150,12 +149,11 @@ commit 중 하나를 확인해보면 `Date: Wed Nov 12 21:45:25 2025 -0500`로 �
 ![|340x189](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1764505850279.png)
 
 확인된 ssh key 및 passphrase 를 기반으로 Credential Harvest 서버에 접속하여 추가 조사를 진행한다.
-`id_ed25519` Private Key를 이용해서 ssh 로그인을 진행해주며, passphrase는 또 다른 
 ```shell
 ssh -i id_ed25519 spark@140.238.194.224
 ```
 ![598x365](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1764433494816.png)
-`.bashrc` 파일을 확인해보면 아래와 같은 onion URL이 확인되며, C2 서버에 대한 IP를 환경 변수로 정의해놓았다.
+접속 후 `.bashrc` 파일을 확인해보면 아래와 같은 onion URL이 확인되며, C2 서버에 대한 IP를 환경 변수로 정의해놓았다.
 ```shell
 #.bashrc
 중략...
@@ -173,17 +171,12 @@ spark@redirector:~$ netstat -ano | grep 158.180.
 tcp        0      0 10.0.0.65:22            158.180.6.169:40302     ESTABLISHED keepalive (1339.67/0/0)
 ```
 
-해당 내용을 통해 공격자는 아래와 같은 서버 구조로 공격을 진행한 것을 알 수 있다.
-```text
-Phishing Site(AWS S3 Static Hosting) - Credential Harvest, SSH Pivot(140.238.194.224) - C2(158.180.6.169)
-```
-
 ## Onion URL 조사
 `.bashrc` 파일에서 확인된 onion URL에 접속하여 추가 조사를 진행한다.
-Tor 브라우저에서 onion URL에 접속하면 아래와 같은 RAASNet(랜섬웨어 생성 서비스) 페이지가 확인된다.
-`Navigation` 탭에서 `Dashboard` 로 접속하면 아래와 같은 화면이 확인된다.
+Tor 브라우저에서 onion URL에 접속하면 RAASNet(랜섬웨어 생성 서비스)로 접속되며 `Navigation` 탭에서 `Dashboard` 로 접속하면 아래와 같은 Victim, Artifacts 등의 화면이 확인된다.
 ![|1057x282](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1764492324203.png)
 
+Victims Overview에는 CEO인 tony.raccoon의 Workstation과 HR 직무로 추정되는 Workstation, DB 서버로 추정되는 srv-db-01 Server가 감염된것으로 확인된다.   
 `Quick Artifacts` 중 `ransom_loader_v2.exe` 파일을 다운로드 후 해당 파일을 조사해보면, 파일은 `ASCII text` 파일이고 아래와 같은 스트링이 출력된다.
 
 ```shell
@@ -200,12 +193,22 @@ Placeholder: Windows loader binary (text-safe). Just a text file for educational
 e4c1572b153b10ed540f415dc436a87c7b46f0965daaa3ac98df3072925013e8  ransom_loader_v2.exe
 ```
 
-이후 공격자는 해당 랜섬웨어 파일을 첨부하여 이메일을 임직원에게 발송, 랜섬웨어 감염을 통해 랜섬 획득이 목적일 것으로 추측된다.
-## 결론
-### 공격 과정
-공격자는 아래의 과정을 통해 Raccooncoin 을 공격한것으로 추측된다.
+이후 공격자는 해당 랜섬웨어 파일을 첨부하여 이메일을 임직원 또는 파트너사에게 발송, 랜섬웨어 감염을 통해 랜섬 획득이 목적일 것으로 추측된다.
+## 결론
+### 공격자 인프라
 ```text
-Typosquatting(T1583.001 / Acquire Infrastructure: Domains) > Phishing Email(T1566.002 / Spearphising Link) > Credential Harvest (T1589.001 / Credential) > DB Extract (T1005 / Data from Local System)
+Phishing Site(AWS S3 Static Hosting)
+Credential Harvest, SSH Pivot Server(140.238.194.224)
+C2 Server(158.180.6.169)
+RAASNet(hxxp://w7kea3mqv3pq4rhnpavv3ezgyhtkj2v443oidlqtuj7aa72wu5yh2nqd.onion)
+```
+
+### 공격 과정 및 TTP
+```text
+> Typosquatting (T1583.001 / Acquire Infrastructure: Domains)
+> Phishing Email (T1566.002 / Spearphising Link)
+> Credential Harvest (T1589.001 / Credential)
+> DB Extract (T1005 / Data from Local System)
 ```
 
 ### IOC
@@ -221,5 +224,9 @@ https://www.linkedin.com/in/soyeong-park-5046b7391 // Fake Linkedin Profile
 
 #Ransomeware
 e4c1572b153b10ed540f415dc436a87c7b46f0965daaa3ac98df3072925013e8 (ransom_loader_v2.exe) // SHA256
-
 ```
+
+## 대응 방안
+* 피싱 이메일 임직원 보안 교육
+* Typosquating URL 선점
+* 수집된 IOC에 대한 차단(백신, IDS, IPS, Firewall 등)

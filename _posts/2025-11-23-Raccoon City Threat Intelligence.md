@@ -202,6 +202,7 @@ e4c1572b153b10ed540f415dc436a87c7b46f0965daaa3ac98df3072925013e8  ransom_loader_
 
 이후 공격자는 해당 랜섬웨어 파일을 첨부하여 이메일을 임직원에게 발송, 랜섬웨어 감염을 통해 랜섬 획득이 목적일 것으로 추측된다.
 ## 결론
+### 공격 과정
 공격자는 아래의 과정을 통해 Raccooncoin 을 공격한것으로 추측된다.
 ```text
 Typosquatting(T1583.001 / Acquire Infrastructure: Domains) > Phishing Email(T1566.002 / Spearphising Link) > Credential Harvest (T1589.001 / Credential) > DB Extract (T1005 / Data from Local System)

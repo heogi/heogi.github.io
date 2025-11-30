@@ -222,7 +222,7 @@ https://www.linkedin.com/in/soyeong-park-5046b7391 // Fake Linkedin Profile
 140.238.194.224 // Credential Harvest Server
 158.180.6.169 // C2 Server
 
-#Ransomeware
+#Ransomware
 e4c1572b153b10ed540f415dc436a87c7b46f0965daaa3ac98df3072925013e8 (ransom_loader_v2.exe) // SHA256
 ```
 

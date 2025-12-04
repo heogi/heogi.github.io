@@ -19,7 +19,7 @@ CEO는 발송 사실을 부인했습니다. TI 팀은 원본 이메일 `client_r
 `client_request.eml` 확인 시 `ceo_forward.eml` 파일이 확인된다.
 해당 메일에는 CEO로 부터 FW 된 피싱 메일인 `original_mass_email.eml` 첨부되어있다.
 ![|394x243](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1763905504005.png)
-피싱 메일에 첨부된 링크는 `http://vpn.racooncoin.site/` (Typosquatting) 이며 Raccoon Coin 내부 임직원들이 사용하는 VPN Web Portal로 확인된다.
+피싱 메일에 첨부된 링크는 `http://vpn.racooncoin.site/` (Typosquatting) 이며 Raccoon Coin 내부 임직원들이 사용하는 VPN Web Portal로 위장한것으로보인다.
 ![|590x369](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1763905591944.png)
 
 ## Phising Site 분석

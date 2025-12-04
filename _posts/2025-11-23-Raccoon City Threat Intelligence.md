@@ -141,7 +141,7 @@ commit 중 하나를 확인해보면 `Date: Wed Nov 12 21:45:25 2025 -0500`로 �
 ![|598x221](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1764386900899.png)
 이를 통해 공격자는 UTC - 5 인 국가에서 commit을 한것으로 추정할 수 있다.
 
-## Credential Harvest 서버 Initial Access
+## Credential Harvest 서버 Initial access
 commit 중 `d64dd40661b4f35cc74be42cbfa72703622e7aa4` 를 확인해보면 특정 서버의 ssh key가 노출된것이 확인된다.
 ![|580x254](../assets/img/2025-11-23-Raccoon%20City%20Threat%20Intelligence-1764387173190.png)
 
